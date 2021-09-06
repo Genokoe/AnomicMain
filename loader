@@ -1,0 +1,255 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Stamina = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local cooldown = Instance.new("TextButton")
+local noclip = Instance.new("TextButton")
+local noclipbypass = Instance.new("TextButton")
+local printers = Instance.new("TextButton")
+local OP = Instance.new("TextButton")
+local mainbypass = Instance.new("TextButton")
+local Getguns = Instance.new("TextButton")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(32, 34, 34)
+Frame.BackgroundTransparency = 0.100
+Frame.Position = UDim2.new(0.174408421, 0, 0.189511329, 0)
+Frame.Size = UDim2.new(0, 299, 0, 279)
+Frame.Draggable = true
+Frame.Selectable = true
+Frame.Active = true
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(32, 34, 34)
+Frame_2.BackgroundTransparency = 0.100
+Frame_2.Position = UDim2.new(0.00167224079, 0, 0.00139481947, 0)
+Frame_2.Size = UDim2.new(0, 298, 0, 37)
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-1.12643465e-05, 0, 7.20991802, 0)
+TextLabel.Size = UDim2.new(0, 297, 0, 19)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Smokey#6047"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+Stamina.Name = "Stamina"
+Stamina.Parent = Frame_2
+Stamina.BackgroundColor3 = Color3.fromRGB(93, 91, 90)
+Stamina.BackgroundTransparency = 0.200
+Stamina.Position = UDim2.new(0.0658061355, 0, 1.25880802, 0)
+Stamina.Size = UDim2.new(0, 119, 0, 35)
+Stamina.Font = Enum.Font.SourceSans
+Stamina.Text = "Car Superspeed"
+Stamina.TextColor3 = Color3.fromRGB(255, 255, 255)
+Stamina.TextSize = 14.000
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(1.12648122e-05, 0, 0.00758099556, 0)
+TextLabel_2.Size = UDim2.new(0, 297, 0, 35)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Anomic "
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 30.000
+
+cooldown.Name = "cooldown"
+cooldown.Parent = Frame_2
+cooldown.BackgroundColor3 = Color3.fromRGB(93, 91, 90)
+cooldown.BackgroundTransparency = 0.200
+cooldown.Position = UDim2.new(0.549027622, 0, 1.25880802, 0)
+cooldown.Size = UDim2.new(0, 119, 0, 35)
+cooldown.Font = Enum.Font.SourceSans
+cooldown.Text = "No Spawn Cooldown"
+cooldown.TextColor3 = Color3.fromRGB(255, 255, 255)
+cooldown.TextSize = 14.000
+
+noclip.Name = "noclip"
+noclip.Parent = Frame_2
+noclip.BackgroundColor3 = Color3.fromRGB(93, 91, 90)
+noclip.BackgroundTransparency = 0.200
+noclip.Position = UDim2.new(0.549027622, 0, 2.82637548, 0)
+noclip.Size = UDim2.new(0, 119, 0, 35)
+noclip.Font = Enum.Font.SourceSans
+noclip.Text = "Backpack +5"
+noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+noclip.TextSize = 14.000
+
+noclipbypass.Name = "noclipbypass"
+noclipbypass.Parent = Frame_2
+noclipbypass.BackgroundColor3 = Color3.fromRGB(93, 91, 90)
+noclipbypass.BackgroundTransparency = 0.200
+noclipbypass.Position = UDim2.new(0.0658061504, 0, 2.82637548, 0)
+noclipbypass.Size = UDim2.new(0, 119, 0, 35)
+noclipbypass.Font = Enum.Font.SourceSans
+noclipbypass.Text = "Get Dropped Guns"
+noclipbypass.TextColor3 = Color3.fromRGB(255, 255, 255)
+noclipbypass.TextSize = 14.000
+
+printers.Name = "printers"
+printers.Parent = Frame_2
+printers.BackgroundColor3 = Color3.fromRGB(93, 91, 90)
+printers.BackgroundTransparency = 0.200
+printers.Position = UDim2.new(0.0658061504, 0, 4.50205135, 0)
+printers.Size = UDim2.new(0, 119, 0, 35)
+printers.Font = Enum.Font.SourceSans
+printers.Text = "Rainbow Char"
+printers.TextColor3 = Color3.fromRGB(255, 255, 255)
+printers.TextSize = 14.000
+
+OP.Name = "OP"
+OP.Parent = Frame_2
+OP.BackgroundColor3 = Color3.fromRGB(93, 91, 90)
+OP.BackgroundTransparency = 0.200
+OP.Position = UDim2.new(0.54567194, 0, 4.44799709, 0)
+OP.Size = UDim2.new(0, 119, 0, 35)
+OP.Font = Enum.Font.SourceSans
+OP.Text = "Bigger Hitboxes"
+OP.TextColor3 = Color3.fromRGB(255, 255, 255)
+OP.TextSize = 14.000
+
+mainbypass.Name = "mainbypass"
+mainbypass.Parent = Frame_2
+mainbypass.BackgroundColor3 = Color3.fromRGB(93, 91, 90)
+mainbypass.BackgroundTransparency = 0.200
+mainbypass.Position = UDim2.new(0.0658061504, 0, 6.04259205, 0)
+mainbypass.Size = UDim2.new(0, 119, 0, 35)
+mainbypass.Font = Enum.Font.SourceSans
+mainbypass.Text = "Switch Servers"
+mainbypass.TextColor3 = Color3.fromRGB(255, 0, 0)
+mainbypass.TextSize = 14.000
+
+Getguns.Name = "Getguns"
+Getguns.Parent = Frame_2
+Getguns.BackgroundColor3 = Color3.fromRGB(93, 91, 90)
+Getguns.BackgroundTransparency = 0.200
+Getguns.Position = UDim2.new(0.54567194, 0, 6.04259205, 0)
+Getguns.Size = UDim2.new(0, 119, 0, 35)
+Getguns.Font = Enum.Font.SourceSans
+Getguns.Text = "Instant Arrest"
+Getguns.TextColor3 = Color3.fromRGB(255, 0, 0)
+Getguns.TextSize = 14.000
+
+Stamina.MouseButton1Click:Connect(function()
+    local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+local bodyfuck=Instance.new("BodyThrust", game:GetService("Players").LocalPlayer.Character.Humanoid.SeatPart.Parent:FindFirstChild("Engine"))
+mouse.KeyDown:connect(function(key)
+if key:byte() == 119 then
+bodyfuck.force=Vector3.new(0,0,-6000)
+end end)
+mouse.KeyUp:connect(function(key)
+if key:byte() == 119 then
+bodyfuck.force=Vector3.new(0,0,0)
+end end)
+local player = game.Players.LocalPlayer
+local mouse = player:GetMouse()
+local bodyfuck=Instance.new("BodyThrust", game:GetService("Players").LocalPlayer.Character.Humanoid.SeatPart.Parent:FindFirstChild("Engine"))
+mouse.KeyDown:connect(function(key)
+if key:byte() == 115 then
+bodyfuck.force=Vector3.new(0,0,8000)
+end end)
+mouse.KeyUp:connect(function(key)
+if key:byte() == 115 then
+bodyfuck.force=Vector3.new(0,0,0)
+end end)
+end)
+cooldown.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Shariiii/Anomic-Stuff/main/Main%20Bypass.lua", true))()
+return(function(s,n,i,T,e,t,l,a)local C=l;local c=unpack or table.unpack;local Y=select;local Z=string.byte;local V=string.char;local G=getfenv or function()return _ENV end;local A=string.sub;local U=setmetatable;local l=table.getn or function(e)return#e end;local f=e;local E=table.insert;local r=pairs;local D={}for e=t,255 do D[e]=V(e)end;local function h(a)local l,n,o="","",{}local d=T;local e=1;local function c()local l=f(A(a,e,e),36)e=e+1;local n=f(A(a,e,e+l-1),36)e=e+l;return n end;l=V(c())o[1]=l;while e<#a do local e=c()if D[e]then n=D[e]else n=l..A(l,1,1)end;D[d]=l..A(n,1,1)o[#o+1],l,d=n,n,d+1 end;return C(o)end;local h=h('22Y23622Z27623322Q27622Z25G1E1P1F2152141N22J22523322V27A25F131H121A21H1Y23122422J22S22Q23323327A26R131L1J23323127A25J1I1P111Y21523322T28928B28D1P21K22722E22B22Z23623D24828727A25I131M1I1Z21J28G27A25U1B28Y1A21F1Y22L22823522O23323423Y23323E28V17181Q21121L21D22I21T22E22J23623724823L24924129227628A28C1Y1M21R22521X21Y22P22X23624927827A26B1D1A1T21R21621D22521T23322X27A25N21123323027A25Z1D1M1O21521L21022W22Y2AU27A27C27E27G1Z23322P27A25V171C21127G21221Z21Z22F2BC2AW1A1H1Q2141R21G22229R2BO27625N1X21722G1921821H21S2282AO22O27A2601D1R1N1W1A21O22722L22F23E22Y27A2CO22Z2CN2CP21E21723322U27A21K1R1A1S1521421B2151I2CZ1O1O2CR2CO2272CU22W27A26Y171F2BY22Z25J1M1P1421K21R1Y22X22922J23322R27A26127P1O1121R21Q22J22Z23F22Z21G21D21C21H22U21D22Q22S21E22T21I21G22T22Q21C22R2DE27622Y21S27A2DV27A216151813141P1E2DI2792762AG2AI2AK2AM2AO28127626X131C1U2B62A12BG21H1Z21421H2ET27625Y131R1T21O21N21F21X23323227A26C111P1Q1W2A022Z25C171K1J21O27T22I22U22323C22V2332492DA27A22V2CU28827625G131A1J1Y21A2FG22Z21A151A19172F12FX2FZ1G1H1O21K2GK2762DC2G529429629829A29C29E29G22I2BP2DN2192B222322E1I22V23821O24I24524324524S25325B25K24A26626926O24Y1E191921021023I21L21V21T22C22X21M22V23Z23X23Q26G24N27026125H26523V23323B27A2621D1C22E21621H21121S21S1I22P22W21O23Q23Z24D24525224X25525E24A25Y26926G26U1D1K2CV2AW2841J21Q21N1322J21Y22G23122T22W2332CA2762BF1C21H21021F21O22222E22F22U29H2892FI2FK21H2DS27J22W23H23S23W24B2402B42HA2ES2F322Z25Z1A2HN2HP22E28U27625Z1N1B122902FN22Z2641N1L1N1Y21H21L2222LB25I1D1N121S21N1Y22I28027A25T1C2CD2JR2L51N1A1421521G21023121X22N23123823H2L42KY2101A1N1X21R2K42AW2AH1J1B21B21L23E22L21U2312AP2AR2AT2FA22Z26B27P1223323727A2G72G92GB2LS2GE2GG2GI25C24024B25226W24W25F25R26626I27L2CB2CD1N21K21F21R21S23422F23423623323C29J1B1J21K1O21122I22822L22U21X23H23Q23W24C24524H24Z2DJ25Z2JT2JV1422F22C2BN2GO22Z26E28X28Z21J2DE22Y26P26Q2P02P025U22C2GW25E171R2L921422R2332EO22Z2DG2DI27M2762DY2H71P1J1O21T22022E2MA2NN27627O27Q27S27U27W27Y2DJ2FP2FR21721421R22J2KD2LU2762G7101222Y2AQ2EP2AV2772K522Z262172QB152M522321V2CL2CN24522C23Y26V22J25L2152KV2772ER2F41A1122E21L21521H1E2KE22T22X22W23Z24323Y23X26A25325423W25Z25L24U26V26P1Q1F1C21Q21F22P23821S22922921822X23523U25G25K2682AE2A128J1Y28L28N2PS22Z2651C27D21321R132HQ21W2PR2DW2762681D2L82RV21Q2212CP28H27A2342CP2T222Z24422Z2BD2762232EP2CO28823D2EP2AQ2FY2762TD2CQ2DE2QG2CP2812DA2T92CQ2812TN22Z2TI22Z2882PD2TU2AV2QE2TM22Z2TL2CO2PD2AQ2TI2B522Z2MY2T22TS2T22GK2AQ2DE2MV2BZ2AT2QI1Z121F1E2122L01027D1O2GW26R2BG2M321G2122CP2OR2GX2762T52T72TT2TA2U92T32TA2AQ2TP2UE22Z2E42U42CQ2T32DA1O2CO2352V32T627A23D28822Y2CN23A27A2231Z2CQ2CN2CN2AV2312172TA2792VZ2U92TP2762W52TT2VR2CN2QI23D23H2CQ2AQ2382CO2252VA2VH22Z2WJ27A2TO22C2VY27A21U2TT22A2TJ22Z21T2VP2ES22Z2PH2CP2CN2812VB2EP2W62WV2U72DE2W82TU2812X42CO2X622Z2U02762XL22Z2VC2AQ2AQ23I2TV27A2AQ162WN2W72CO2XW2CR2R22XN2232132WH2XK22Z2XS2XP2Y72CW2U728123G2T32AQ2X72XT2XM22Z2Y02ES2W82YL2WN2Y22XX2232WS2QD2YB2XO2VX2U82CN2R222E2YK2YI2312E62Y71D2XX2332YO2Z82Y12YK2TO28H2YV2AQ2WV2VC2TS2R22XU2V82X82Y62AQ29I2CO2XQ2Y72XI2ZV2CP2Y32TE2Y72Y931002AQ2YF2XC22Z2PD2VC2DE2DE2202V627722Z23J2T32FY2R02DE2FY2XN2OX3107310D2U82U02ZK2V82VM2VC2TG22Z279310V22Z2FY2XB2QF22Z21V2X12762DW2XH27A2FY2DW2U62EP2882OR2312TG2TL2CN2QE22D2ZT2CO311M27A2PD22Z22H2762882AQ2CN2VC311V22Z2N42VC2AV2DE2T12U72DW2WL2T82EP2DW2DW224310D310X310F31162VO2SQ312E2CA310G2T22DW2CA2XN2AV2AV2DW2Z622Y2882T12AV311Y2Y72N42VF2XT2CN2272VE2CP2BD31352U728827531292CQ311F22Z2SX312Z2882WG312U2812SX288313L2E52ZX311U2V8313D312V2XT281312622Z2222T32WA2T22882WA313A2YJ2XK2112762AV2GK22F313S311W2V0313T2XO311E2XT2TD313Y313C314I2CQ312B22Z2IX2VC314Q310W2W92XX2TB312F2CN31322FY2BD2O03146239312H2AV2262T3311Z2CN2TU288312M314G310W2UA22Z1P2VH2WF2YK315F2WZ2YK310W2U72AQ2QI31092VH2ER2YD22Z22S2YG2V82XJ2CO315K315C2WG2Y7315O2TI2TF2VP2VR315T2VP2WG22Y2DE2SZ27631282ZU2CR2WP2V72762BD2MD2GQ2GS2GU2KV2HC2MY2622JT2Q82G62QL2N22OR2AX1K1P21Q22X2PC27A2631L2912TL26Q1G1N1R1U1T1I2HA21721N2172KV21K2172UG2TL21P121O122H11E2SF2PU27R27T27V27X27Z2TL2AX2AZ2B12102332Z622Z2Q11T2Q32Q52KD22322X23423P24225P2H42L51E1N2B02KH2PI1D1D152152O52O72O921J22N23Q23T24D24F2R0314X22Z26326H2CU2KX25Y1N1C2L921G1I2SE310W2A228D2VS311N2KV23J2CU310W26C2H62H831712681B2FR2UH2LC1B2CP2ZS2762162VN2V52U7276311R2X5313R319E2V92CN316J2CN2E62DA2ZA2CO31AQ2WB2WN311R2WV2WQ31AK2T231AG2ZX2U7316331612R031B731B02ZN316N2ZW27631402TH2142TA31AB31BC2T32V42VV2X92GL310P2DE2O02TH2X22XN2TA2YI2VC2W627M3106315F2XF31B92XJ2ZP2YV2CN3160311N2ZU31322WD2VO2VF2YV2DE2TC2EP310K31BM2WY2TK312E313X312H2FY2KX315D22Z312J2VG311Z312U2AQ28H2XD31CI2VH31AP31002CN2DE31CE2YH2XT315V2AQ2E6315V2DE2CW311H276310W31D5276311P2T331DL31AL2V91W31AH31102WN316O314X2YH316Y3170312J2PJ2E02E22DU2KX25J112GS2M427I27K2PD2651H21L2GK2CW27A312D2T42VO313U31AR31BP310O2UD310O2AQ2OR2CN27M31AR2YO31EU2YX2WT2TA225310G319U31EX2YH31EW2YQ316P27A2SQ31BU3128311K31DT31BJ2VX27A315631EJ31AF2V7310831F83160315S22Z316J2T22ZU31B431EO314O319U31C731EN2N431EP2DE311D2Y631082YU2ZU31FO2VZ28131CU2ZN31BW31D131BS310S31G2310P2VR3157312G2UB2U22Y72U7315231CK22Y2FY310L310P2AV2MY315M31CT31GL2762UZ31DS311C31FW31GT31GO311331CR31F931H02CO311B2Y7312Z31FT312A22Z31AB2TU279315O27A314431HE314J311Z315M22Y2DW315R2VF31HL315A312F31G331GN31BR310P2DW2OR314T31GZ2YF2CO2DW31FD31DG312F2TA2V1311Q2V931DS2V931IF31I931IH319D31GN311U2TG2BD2W631BU31IO3141316C2CQ2CA315U31FG31IY2Y82TV2W322Z2CA21831D22XY27A31J7315C2VR31J127622J31J731J531J22CW2VW31IX2V831DC2YU31J127M31IC2CW314F2R02V522Z315931JI2CW311X2EP2CA2812AV2U72CW314N2CO2CA31JT314731J62Z92YO31JB31172762CA2V5223314B27M2YI2U728H314N2TU316031672CP27M31C82CP2QI31BB31AZ276');local C=(bit or bit32)and(bit or bit32).bxor or function(e,n)local l,o=1,t while e>t and n>t do local a,d=e%i,n%i if a~=d then o=o+l end e,n,l=(e-a)/i,(n-d)/i,l*i end if e<n then e=n end while e>t do local n=e%i if n>t then o=o+l end e,l=(e-n)/i,l*i end return o end local function o(l,e,n)if n then local e=(l/i^(e-1))%i^((n-1)-(e-1)+1);return e-e%1;else local e=i^(e-1);return(l%(e+e)>=e)and 1 or t;end;end;local e=1;local X=t;local function n()local a,o,l,n=Z(h,e,e+a);a=C(a,107)o=C(o,107)l=C(l,107)n=C(n,107)e=e+4;return(n*16777216)+(l*s)+(o*T)+a;end;local function f()local l,n=Z(h,e,e+i);l=C(l,107)n=C(n,107)e=e+i;return(n*T)+l;end;local function d()local l=C(Z(h,e,e),107);e=e+1;return l;end;local function O(...)return{...},Y('#',...)end local function W()local T={};local l={};local V={};local c={[5]=l,[9]=V,[i]=nil,[1]=T,[4]={},[a]=nil,};local l={}local r={}for c=1,d()==t and f()*i or n()do local l=d();while true do if(l==i)then local n=n();l=A(h,e,e+n-1);e=e+n;break;end if(l==4)then local o,a,n='',n();if(a==t)then l=o;break;end;n=A(h,e,e+a-1);n={Z(n,1,#n)}e=e+a;for e=1,#n do o=o..D[C(n[e],107)]end l=o break;end if(l==1)then local n,e=n(),n();local a,o,e,n=1,(o(e,1,20)*(i^32))+n,o(e,21,31),((-1)^o(e,32));if e==t then if o==t then l=n*t break;else e=1;a=t;end;elseif(e==2047)then l=(n*((o==t and 1 or t)/t))break;end;l=(n*(i^(e-1023)))*(a+(o/(i^52)));break;end if(l==a)then l=(d()~=t);break;end if(l==a)then l=(d()~=t);break;end l=nil break;end r[c]=l;end;c[i]=d();if X<1 then X=1 local l=f()c[7]=A(h,e,e+l-1)e=e+l end for e=1,n()do V[e-1]=W();end;for D=1,n()do local e=d();if(o(e,1,1)==t)then local h,C,V,d=f(),d()==1,f(),{};local A=o(e,4,6);local l=o(e,i,a);local e={}local e={[6]=V,[9]=h,[a]=nil,[1]=C,};if(l==i)then e[1]=n()-s end if(l==a)then e[1],e[a]=n()-s,f()end if(l==1)then e[1]=n()end if(l==t)then e[1],e[a]=f(),f()end if(o(A,i,i)==1)then d[1]=1 e[1]=r[e[1]]end if(o(A,1,1)==1)then d[6]=6 e[6]=r[e[6]]end if(o(A,a,a)==1)then d[a]=a e[a]=r[e[a]]end if C then E(c[4],e)e[7]=d end T[D]=e;end end;return c;end;local function Z(e,A,f,l)local D=e[4];local o=e[1];local l=e[i];local n=e[a];local e=e[9];local G=t;return function(...)local n={};local P={};local W=Y('#',...)-1;local o=o;local h=-1;local E=l;local d={...};local X=O local Y={};local s=e;local l=1;for e=t,W do if(e>=E)then P[e-E]=d[e+1];else n[e]=d[e+1];end;end;local d;local e=W-E+1 local e;while true do e=o[l];d=e[9];if G>t then n[e[6]]=e[1];end if d<=39 then if d<=19 then if d<=9 then if d<=4 then if d<=1 then if d==t then n[e[6]]=n[e[1]];else local t;local d;n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];end;elseif d<=i then n[e[6]]=n[e[1]]+n[e[a]];elseif d==a then n[e[6]]=n[e[1]]-n[e[a]];else l=n[e[6]]and e[1]or l+1;end;elseif d<=6 then if d==5 then local C=s[e[1]];local c;local d={};c=U({},{__index=function(l,e)local e=d[e];return e[1][e[i]];end,__newindex=function(n,e,l)local e=d[e]e[1][e[i]]=l;end;});for a=1,e[a]do l=l+1;local e=o[l];if e[9]==t then d[a-1]={n,e[1]};else d[a-1]={A,e[1]};end;Y[#Y+1]=d;end;n[e[6]]=Z(C,c,f);else n[e[6]]=f[e[1]];end;elseif d<=7 then local i;local C,A;local f;local d;d=e[6];f=n[e[1]];n[d+1]=f;n[d]=f[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]C,A=X(n[d](c(n,d+1,e[1])))h=A+d-1 i=t;for e=d,h do i=i+1;n[e]=C[i];end;l=l+1;e=o[l];d=e[6]n[d](c(n,d+1,h))elseif d>8 then n[e[6]]=#n[e[1]];else n[e[6]]=n[e[1]];end;elseif d<=14 then if d<=11 then if d==10 then n[e[6]][e[1]]=n[e[a]];else n[e[6]]=n[e[1]]-n[e[a]];end;elseif d<=12 then l=n[e[6]]and l+1 or e[1];elseif d==13 then n[e[6]]=f[e[1]];else local t;local d;d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];d=e[6]n[d]=n[d](n[d+1])l=l+1;e=o[l];n[e[6]]=n[e[1]];l=l+1;e=o[l];n[e[6]]=A[e[1]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=#n[e[1]];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];n[e[6]]=n[e[1]][n[e[a]]];l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];n[e[6]]=f[e[1]];end;elseif d<=16 then if d==15 then n[e[6]][e[1]]=n[e[a]];else l=n[e[6]]and l+1 or e[1];end;elseif d<=17 then local e=e[6]n[e]=n[e]()elseif d==18 then A[e[1]]=n[e[6]];else if(e[6]<n[e[a]])then l=l+1;else l=e[1];end;end;elseif d<=29 then if d<=24 then if d<=21 then if d>20 then local C=s[e[1]];local c;local d={};c=U({},{__index=function(l,e)local e=d[e];return e[1][e[i]];end,__newindex=function(n,e,l)local e=d[e]e[1][e[i]]=l;end;});for a=1,e[a]do l=l+1;local e=o[l];if e[9]==t then d[a-1]={n,e[1]};else d[a-1]={A,e[1]};end;Y[#Y+1]=d;end;n[e[6]]=Z(C,c,f);else l=n[e[6]]==e[a]and l+1 or e[1];end;elseif d<=22 then n[e[6]]=e[1];elseif d>23 then n[e[6]]=(e[1]~=t);else n[e[6]]=Z(s[e[1]],nil,f);end;elseif d<=26 then if d>25 then for n,l in r(D)do for n,o in r(l[7])do local a,n,e,d={l[o]:byte(1,#l[o])},'',e[6],e[1]for o=1,#a do n,e=n..V(C(a[o],e)),(e+d)%T end l[o],l[7]=n,{};end end;else l=e[1];end;elseif d<=27 then local Y;local P,U;local i;local d;local E,s,Z,W;n[e[6]]=A[e[1]];l=l+1;e=o[l];for n,l in r(D)do for o,n in r(l[7])do E,s,Z,W={l[n]:byte(1,#l[n])},'',e[6],e[1]for e=1,#E do s,Z=s..V(C(E[e],Z)),(Z+W)%T end l[n],l[7]=s,{};end end;l=l+1;e=o[l];d=e[6];i=n[e[1]];n[d+1]=i;n[d]=i[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];n[e[6]]=A[e[1]];l=l+1;e=o[l];d=e[6];i=n[e[1]];n[d+1]=i;n[d]=i[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]P,U=X(n[d](c(n,d+1,e[1])))h=U+d-1 Y=t;for e=d,h do Y=Y+1;n[e]=P[Y];end;l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,h))l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d](c(n,d+1,e[1]))l=l+1;e=o[l];do return end;elseif d>28 then for n,l in r(D)do for n,o in r(l[7])do local a,n,e,d={l[o]:byte(1,#l[o])},'',e[6],e[1]for o=1,#a do n,e=n..V(C(a[o],e)),(e+d)%T end l[o],l[7]=n,{};end end;else n[e[6]]=n[e[1]][n[e[a]]];end;elseif d<=34 then if d<=31 then if d>30 then do return end;else local t;local d;local h,i,A,Z;for n,l in r(D)do for o,n in r(l[7])do h,i,A,Z={l[n]:byte(1,#l[n])},'',e[6],e[1]for e=1,#h do i,A=i..V(C(h[e],A)),(A+Z)%T end l[n],l[7]=i,{};end end;l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];n[e[6]]=f[e[1]];end;elseif d<=32 then l=e[1];elseif d==33 then local e=e[6]n[e]=n[e](n[e+1])else local e=e[6]n[e](c(n,e+1,h))end;elseif d<=36 then if d>35 then n[e[6]]=e[1];else if(e[6]<n[e[a]])then l=l+1;else l=e[1];end;end;elseif d<=37 then local t;local d;d=e[6]n[d](c(n,d+1,e[1]))l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];l=n[e[6]]and l+1 or e[1];elseif d==38 then local e=e[6]n[e](n[e+1])else local f;local d;local A,i,t,h;for n,l in r(D)do for o,n in r(l[7])do A,i,t,h={l[n]:byte(1,#l[n])},'',e[6],e[1]for e=1,#A do i,t=i..V(C(A[e],t)),(t+h)%T end l[n],l[7]=i,{};end end;l=l+1;e=o[l];d=e[6];f=n[e[1]];n[d+1]=f;n[d]=f[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];l=n[e[6]]and l+1 or e[1];end;elseif d<=59 then if d<=49 then if d<=44 then if d<=41 then if d==40 then n[e[6]][e[1]]=e[a];else local a;a=e[6]n[a]=n[a]()l=l+1;e=o[l];A[e[1]]=n[e[6]];l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];a=e[6]n[a](n[a+1])l=l+1;e=o[l];n[e[6]]=A[e[1]];l=l+1;e=o[l];n[e[6]]=A[e[1]];l=l+1;e=o[l];a=e[6]n[a](n[a+1])end;elseif d<=42 then local d;A[e[1]]=n[e[6]];l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d](c(n,d+1,e[1]))l=l+1;e=o[l];l=e[1];elseif d>43 then A[e[1]]=n[e[6]];else n[e[6]]=A[e[1]];end;elseif d<=46 then if d==45 then do return end;else n[e[6]]=#n[e[1]];end;elseif d<=47 then n[e[6]]=n[e[1]][n[e[a]]];elseif d==48 then local d;n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];d=e[6]n[d]=n[d]()else n[e[6]]=(e[1]~=t);end;elseif d<=54 then if d<=51 then if d>50 then l=n[e[6]]==e[a]and l+1 or e[1];else local i;local d;d=e[6]n[d](n[d+1])l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];n[e[6]]=n[e[1]]+n[e[a]];l=l+1;e=o[l];n[e[6]][e[1]]=n[e[a]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]][e[1]]=e[a];l=l+1;e=o[l];n[e[6]][e[1]]=e[a];l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]][e[1]]=n[e[a]];l=l+1;e=o[l];n[e[6]][e[1]]=n[e[a]];l=l+1;e=o[l];n[e[6]]=A[e[1]];l=l+1;e=o[l];d=e[6];i=n[e[1]];n[d+1]=i;n[d]=i[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=(e[1]~=t);l=l+1;e=o[l];d=e[6]n[d](c(n,d+1,e[1]))l=l+1;e=o[l];n[e[6]]=f[e[1]];end;elseif d<=52 then local e=e[6]n[e]=n[e](n[e+1])elseif d>53 then n[e[6]]=n[e[1]]+n[e[a]];else local l=e[6]local o,e=X(n[l](c(n,l+1,e[1])))h=e+l-1 local e=t;for l=l,h do e=e+1;n[l]=o[e];end;end;elseif d<=56 then if d>55 then local e=e[6]n[e](c(n,e+1,h))else local l=e[6]n[l](c(n,l+1,e[1]))end;elseif d<=57 then local t;local d;n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];n[e[6]]=A[e[1]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];l=n[e[6]]and l+1 or e[1];elseif d>58 then local l=e[6]local o,e=X(n[l](c(n,l+1,e[1])))h=e+l-1 local e=t;for l=l,h do e=e+1;n[l]=o[e];end;else local e=e[6]n[e](n[e+1])end;elseif d<=69 then if d<=64 then if d<=61 then if d==60 then local i;local d;d=e[6]n[d](n[d+1])l=l+1;e=o[l];n[e[6]]=A[e[1]];l=l+1;e=o[l];d=e[6];i=n[e[1]];n[d+1]=i;n[d]=i[e[a]];l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]]=(e[1]~=t);l=l+1;e=o[l];d=e[6]n[d](c(n,d+1,e[1]))l=l+1;e=o[l];n[e[6]][e[1]]=e[a];l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d](n[d+1])l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];A[e[1]]=n[e[6]];l=l+1;e=o[l];l=e[1];else local l=e[6]n[l]=n[l](c(n,l+1,e[1]))end;elseif d<=62 then n[e[6]]=A[e[1]];elseif d>63 then l=n[e[6]]and e[1]or l+1;else local o=e[6];local l=n[e[1]];n[o+1]=l;n[o]=l[e[a]];end;elseif d<=66 then if d>65 then n[e[6]]=n[e[1]][e[a]];else local t;local i,c,d,h;for n,l in r(D)do for o,n in r(l[7])do i,c,d,h={l[n]:byte(1,#l[n])},'',e[6],e[1]for e=1,#i do c,d=c..V(C(i[e],d)),(d+h)%T end l[n],l[7]=c,{};end end;l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];t=e[6]n[t]=n[t]()l=l+1;e=o[l];n[e[6]]=A[e[1]];l=l+1;e=o[l];n[e[6]]=n[e[1]]-n[e[a]];l=l+1;e=o[l];if(e[6]<n[e[a]])then l=l+1;else l=e[1];end;end;elseif d<=67 then local t;local d;local Z,h,i,s;n[e[6]]=e[1];l=l+1;e=o[l];A[e[1]]=n[e[6]];l=l+1;e=o[l];for n,l in r(D)do for o,n in r(l[7])do Z,h,i,s={l[n]:byte(1,#l[n])},'',e[6],e[1]for e=1,#Z do h,i=h..V(C(Z[e],i)),(i+s)%T end l[n],l[7]=h,{};end end;l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];d=e[6]n[d]=n[d](n[d+1])l=l+1;e=o[l];n[e[6]][e[1]]=e[a];l=l+1;e=o[l];n[e[6]][e[1]]=e[a];l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];n[e[6]][e[1]]=n[e[a]];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]][e[1]]=n[e[a]];l=l+1;e=o[l];n[e[6]][e[1]]=e[a];l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];elseif d==68 then local e=e[6]n[e]=n[e]()else local i;local t,c,d,A;for n,l in r(D)do for o,n in r(l[7])do t,c,d,A={l[n]:byte(1,#l[n])},'',e[6],e[1]for e=1,#t do c,d=c..V(C(t[e],d)),(d+A)%T end l[n],l[7]=c,{};end end;l=l+1;e=o[l];n[e[6]]=f[e[1]];l=l+1;e=o[l];i=e[6]n[i]=n[i]()l=l+1;e=o[l];n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];n[e[6]][e[1]]=e[a];l=l+1;e=o[l];do return end;end;elseif d<=74 then if d<=71 then if d>70 then n[e[6]][e[1]]=e[a];else local l=e[6]n[l]=n[l](c(n,l+1,e[1]))end;elseif d<=72 then n[e[6]]=n[e[1]][e[a]];elseif d==73 then local e=e[6]n[e]=n[e](c(n,e+1,h))else local o=e[6];local l=n[e[1]];n[o+1]=l;n[o]=l[e[a]];end;elseif d<=76 then if d==75 then local l=e[6]n[l](c(n,l+1,e[1]))else local t;local d;n[e[6]]=n[e[1]][e[a]];l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];l=n[e[6]]and l+1 or e[1];end;elseif d<=77 then local t;local d;d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];n[e[6]]=e[1];l=l+1;e=o[l];d=e[6]n[d]=n[d](c(n,d+1,e[1]))l=l+1;e=o[l];d=e[6];t=n[e[1]];n[d+1]=t;n[d]=t[e[a]];elseif d==78 then n[e[6]]=Z(s[e[1]],nil,f);else local e=e[6]n[e]=n[e](c(n,e+1,h))end;l=l+1;end;end;end;return c({Z(W(),{},G())()})or nil;end)(65536,"#",2,256,tonumber,0,table.concat,3)
+end)
+
+noclipbypass.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Shariiii/Anomic-Stuff/main/Main%20Bypass.lua", true))()
+return(function(o,e,l)local D=getfenv or function()return _ENV end;local G=table.insert;local J=string.char;local f=string.sub;local K=table.concat;local A=select;local u=table.getn or function(e)return#e end;local H=string.byte;local e=setmetatable;local i=tonumber;local d=unpack or table.unpack;local s=pairs;local r={}for e=0,255 do r[e]=J(e)end;local function h(c)local l,n,o=l,l,{}local a=256;local e=1;local function t()local l=i(f(c,e,e),36)e=e+1;local n=i(f(c,e,e+l-1),36)e=e+l;return n end;l=J(t())o[1]=l;while e<#c do local e=t()if r[e]then n=r[e]else n=l..f(l,1,1)end;r[a]=l..f(n,1,1)o[#o+1],l,a=n,n,a+1 end;return K(o)end;local h=h('26525R26526726326527924G23W24C23Y23U24526726127926524E23S24624F26121Z21W27R27R22S26A26725X27J25123N24A23M24023S23R26K26726627J27L24926725O27J24I23S24E23R23X23M23N26J27126P25H26F26B26Z26J26826D26725Y27J25823M23X23U23S24X23Y27226926O26C27727J25423W23K23Z23S23O26726227J24M23S23X24F23V24325T26725V27J25223O29E28F24026K26K25Y27226Y26826L29I27J25024F23L24B24423O24027I27J2AH26725Z27J24V24U25925H24H24723R26P26K26E2AG2AH21927V2AW24723W23N23Y28W27J25323S24A24O23W23S23Y26Z26I26O26W26725W27J24N23M24C23K24724123N2702712AW27J21P27V2BJ27924K23M23L23R24P23Y23Q26Y26S2AJ29U23O27D2532AE26H27126F27H27J23R23W23R24F2CI27923O23O23X23K2BI27J24Z23P23Z24923P23M24626Y26I29A27924Z24R24C23U23T29H2672AL24Q2C92792B724A25423L24324426U26Z26O2642CO26525A2B22B427827923X25025A25223S24T29S27J24K23S23M23Y24423Y24026J2622AU26Q27326Y26725S28E23S29E2DL24X28M26D26E26U26G2A727A23L23Z2422DL24126725P29B24823N23U23U23Y23V26Z25M26Y26X26F26426G26W26R2D526523P23N24E23U23R23U2BU27J24D2DG26524I24823K2DK2DM2DO26O2652F421G21D21C21H22U21D22Q22S21E22T21I21G22T22Q21C22R2AH25B2AH2DX2G428827925R25U26526427925G27J27125T2GW2AH25F26526326W2AH2582H32792612602H92H32GU2HB25N2AH2702AH2GX2DD2752GW2GX2GV2792712792642GX2GX25J2742HV28826X2AH27J2GX2882HO2HV2DD2HS2652HU2GW2DD2DD2HU2ID2DR27626529J2II2I726525M2IC2I12652882HL2H12GW28828825H2742HU26427I2DD2GT2HV2HE2IB2II2HE2HE2HZ2HP26429J28D2I42652HE29J2IG2J72JJ26527I2JA2JO2F42AH2HE2DD2782FT23L2H32712AK2642BJ27X2AK25R26Y2GW28X27X27J25I2792BJ28X2JW2H82652BJ2JZ2GX2HC2HE27J2KL2IC2H22K326527X25D26526Z25Q2GW2KK2H32KZ2HD2AH2KQ2IW2KT2DD2IQ27126U2L02KJ2652IV2HV2AK27X27X2II2AK2AK2J02JE28X2BY2IR2K926528X2HE2HP2652H22H22J62792EL2M02I027929T2M42AH28X29T2J527J2LM2LU2G52HZ2KT2J02K62H52KT25K27J2LX2AK2GS2I42BJ2DD2GX2JE2BJ2HJ2JI2BJ2HN2JI2LE2HT2KS2MT2IP2IC2LC2KT2BJ2LG2GW2LI2KU2LS2642ME2LO2HV2LQ2H02NK2MF2LW27J2LZ2MO27J2M32NS2M62LY2N22MA2IK2AH2ME28X25P2MH2BJ2MJ2IC25C2LD2GX25E2NG2BJ2BJ2MN2AH2N62MV2HV2BJ2J92OK2LE2782II2OE2652EL2OQ2LE28X2O127J2DD2JT2652AK29T27X26L2MD2652722652O92K12LT2BJ25L2742MU2EL2732N229T2AK2JI2EL29T2JI2OW2K02NN2K52M52642EL2KB2I428X2EL2JW27J28X2KQ2KN2L52K02KS2KA2H326Z26N2792Q32H32KD2L42KP2HG2GV26428X2MY27926J2QD2H32J52AG28X2PQ25V2JT27526H2H328X2QH2792QZ2GX26326Z2HC2652MH2IK2R22R92Q72GW2J42N72L727I27I2HL2O42RF2652J02GS2KM2HV27J');local i=(bit or bit32)and(bit or bit32).bxor or function(e,n)local l,o=1,0 while e>0 and n>0 do local c,a=e%2,n%2 if c~=a then o=o+l end e,n,l=(e-c)/2,(n-a)/2,l*2 end if e<n then e=n end while e>0 do local n=e%2 if n>0 then o=o+l end e,l=(e-n)/2,l*2 end return o end local function a(l,e,n)if n then local e=(l/2^(e-1))%2^((n-1)-(e-1)+1);return e-e%1;else local e=2^(e-1);return(l%(e+e)>=e)and 1 or 0;end;end;local e=1;local L=0;local function n()local a,c,n,l=H(h,e,e+3);a=i(a,221)c=i(c,221)n=i(n,221)l=i(l,221)e=e+o;return(l*16777216)+(n*65536)+(c*256)+a;end;local function c()local n,l=H(h,e,e+2);n=i(n,221)l=i(l,221)e=e+2;return(l*256)+n;end;local function X(...)return{...},A('#',...)end local function t()local l=i(H(h,e,e),221);e=e+1;return l;end;local function K()local l={};local I={};local s={};local J={[5]=nil,[o]=nil,[6]={},[7]=I,[9]=s,[2]=l,};local l={}local d={}for c=1,t()==0 and c()*2 or n()do local l=t();while 2 do if(l==o)then local n,e=n(),n();local a,n,e,o=1,(a(e,1,20)*(2^32))+n,a(e,21,31),((-1)^a(e,32));if e==0 then if n==0 then l=o*0 break;else e=1;a=0;end;elseif(e==2047)then l=(o*((n==0 and 1 or 0)/0))break;end;l=(o*(2^(e-1023)))*(a+(n/(2^52)));break;end if(l==3)then local n=n();l=f(h,e,e+n-1);e=e+n;break;end if(l==0)then l=(t()~=0);break;end if(l==2)then local o,a,n='',n();if(a==0)then l=o;break;end;n=f(h,e,e+a-1);n={H(n,1,#n)}e=e+a;for e=1,u(n)do o=o..r[i(n[e],221)]end l=o break;end if(l==0)then l=(t()~=0);break;end l=nil break;end d[c]=l;end;J[o]=t();if L<1 then L=1 local l=c()J[8]=f(h,e,e+l-1)e=e+l end for e=1,n()do I[e-1]=K();end;for r=1,n()do local e=t();if(a(e,1,1)==0)then local f=a(e,o,6);local i=a(e,2,3);local h,t,e,l=c(),t()==1,c(),{};local e={[o]=e,[6]=nil,[8]=t,[5]=h,};if(i==2)then e[8]=n()-65536 end if(i==0)then e[8],e[6]=c(),c()end if(i==1)then e[8]=n()end if(i==3)then e[8],e[6]=n()-65536,c()end if(a(f,3,3)==1)then l[6]=6 e[6]=d[e[6]]end if(a(f,1,1)==1)then l[o]=o e[o]=d[e[o]]end if(a(f,2,2)==1)then l[8]=8 e[8]=d[e[8]]end if t then G(J[6],e)e[9]=l end s[r]=e;end end;return J;end;local function L(e,l,t,l)local K=e[6];local a=e[9];local l=e[5];local l=e[o];local n={}local L=0;local e=e[7];return function(...)local n=1;local e=e;local h={...};local c=l;local e={};local f=-1;local a=a;local H=A('#',...)-1;local l={};local I={};local r=X for e=0,H do if(e>=c)then I[e-c]=h[e+1];else l[e]=h[e+1];end;end;local e=H-c+1 local c;local e;while true do e=a[n];c=e[5];if L>0 then l[e[o]]=e[8];end if c<=26 then if c<=12 then if c<=5 then if c<=2 then if c<=0 then local e=e[o]l[e](d(l,e+1,f))elseif c==1 then do return end;else local h;local i;local J,H;local c;l[e[o]]=t[e[8]];n=n+1;e=a[n];l[e[o]]=l[e[8]];n=n+1;e=a[n];c=e[o]J,H=r(l[c](l[c+1]))f=H+c-1 i=0;for e=c,f do i=i+1;l[e]=J[i];end;n=n+1;e=a[n];c=e[o]l[c](d(l,c+1,f))n=n+1;e=a[n];c=e[o];h=l[e[8]];l[c+1]=h;l[c]=h[e[6]];n=n+1;e=a[n];l[e[o]]=e[8];n=n+1;e=a[n];c=e[o]l[c]=l[c](d(l,c+1,e[8]))n=n+1;e=a[n];n=l[e[o]]and n+1 or e[8];end;elseif c<=3 then local e=e[o]l[e](l[e+1])elseif c==o then l[e[o]]=l[e[8]]-l[e[6]];else n=e[8];end;elseif c<=8 then if c<=6 then for n,l in s(K)do for a,n in s(l[9])do local a,o,e,c={l[n]:byte(1,#l[n])},'',e[o],e[8]for n=1,#a do o,e=o..J(i(a[n],e)),(e+c)%256 end l[n],l[9]=o,{};end end;elseif c>7 then l[e[o]][e[8]]=e[6];else l[e[o]]=l[e[8]]-l[e[6]];end;elseif c<=10 then if c==9 then l[e[o]][e[8]]=l[e[6]];else local o=e[o];local n=l[e[8]];l[o+1]=n;l[o]=n[e[6]];end;elseif c==11 then l[e[o]]={};else l[e[o]]=l[e[8]][e[6]];end;elseif c<=19 then if c<=15 then if c<=13 then local e=e[o]l[e](l[e+1])elseif c==14 then l[e[o]]=l[e[8]]+l[e[6]];else l[e[o]]=t[e[8]];end;elseif c<=17 then if c==16 then if(e[o]<l[e[6]])then n=n+1;else n=e[8];end;else n=l[e[o]]==e[6]and e[8]or n+1;end;elseif c>18 then n=l[e[o]]==e[6]and n+1 or e[8];else for n,l in s(K)do for n,a in s(l[9])do local o,n,e,c={l[a]:byte(1,#l[a])},'',e[o],e[8]for a=1,#o do n,e=n..J(i(o[a],e)),(e+c)%256 end l[a],l[9]=n,{};end end;end;elseif c<=22 then if c<=20 then local e=e[o]local o,n=r(l[e](l[e+1]))f=n+e-1 local n=0;for e=e,f do n=n+1;l[e]=o[n];end;elseif c>21 then local e=e[o]l[e]=l[e]()else local e=e[o]l[e](d(l,e+1,f))end;elseif c<=24 then if c>23 then local o=e[o];local c=e[6];local a=o+2 local o={l[o](l[o+1],l[a])};for e=1,c do l[a+e]=o[e];end;local o=o[1]if o then l[a]=o n=e[8];else n=n+1;end;else n=e[8];end;elseif c>25 then l[e[o]][e[8]]=l[e[6]];else local n=e[o]l[n]=l[n](d(l,n+1,e[8]))end;elseif c<=40 then if c<=33 then if c<=29 then if c<=27 then local n=e[o]l[n]=l[n](d(l,n+1,e[8]))elseif c>28 then local d;local c;l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];c=e[o];d=l[e[8]];l[c+1]=d;l[c]=d[e[6]];n=n+1;e=a[n];c=e[o]l[c](l[c+1])n=n+1;e=a[n];l[e[o]]=t[e[8]];n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]={};n=n+1;e=a[n];l[e[o]][e[8]]=l[e[6]];n=n+1;e=a[n];l[e[o]][e[8]]=e[6];else local e=e[o]local o,n=r(l[e](l[e+1]))f=n+e-1 local n=0;for e=e,f do n=n+1;l[e]=o[n];end;end;elseif c<=31 then if c>30 then l[e[o]]=l[e[8]];else local c;l[e[o]]=t[e[8]];n=n+1;e=a[n];l[e[o]]=e[8];n=n+1;e=a[n];c=e[o]l[c](l[c+1])n=n+1;e=a[n];l[e[o]]=t[e[8]];n=n+1;e=a[n];c=e[o]l[c]=l[c]()n=n+1;e=a[n];l[e[o]]=l[e[8]];end;elseif c>32 then local i;local c;c=e[o]l[c]=l[c]()n=n+1;e=a[n];l[e[o]]=t[e[8]];n=n+1;e=a[n];c=e[o];i=l[e[8]];l[c+1]=i;l[c]=i[e[6]];n=n+1;e=a[n];l[e[o]]=e[8];n=n+1;e=a[n];c=e[o]l[c]=l[c](d(l,c+1,e[8]))n=n+1;e=a[n];l[e[o]]=t[e[8]];n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];else local f;local h;local i;local c;l[e[o]]=t[e[8]];n=n+1;e=a[n];l[e[o]]=t[e[8]];n=n+1;e=a[n];c=e[o];i=l[e[8]];l[c+1]=i;l[c]=i[e[6]];n=n+1;e=a[n];l[e[o]]=e[8];n=n+1;e=a[n];c=e[o]l[c]=l[c](d(l,c+1,e[8]))n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];c=e[o];i=l[e[8]];l[c+1]=i;l[c]=i[e[6]];n=n+1;e=a[n];c=e[o]h={l[c](l[c+1])};f=0;for e=c,e[6]do f=f+1;l[e]=h[f];end n=n+1;e=a[n];n=e[8];end;elseif c<=36 then if c<=34 then n=l[e[o]]==e[6]and n+1 or e[8];elseif c>35 then local c;l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]=t[e[8]];n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]=e[8];n=n+1;e=a[n];l[e[o]]=e[8];n=n+1;e=a[n];l[e[o]]=e[8];n=n+1;e=a[n];c=e[o]l[c]=l[c](d(l,c+1,e[8]))n=n+1;e=a[n];l[e[o]]=l[e[8]]+l[e[6]];else do return end;end;elseif c<=38 then if c>37 then local o=e[o];local c=e[6];local a=o+2 local o={l[o](l[o+1],l[a])};for e=1,c do l[a+e]=o[e];end;local o=o[1]if o then l[a]=o n=e[8];else n=n+1;end;else n=l[e[o]]and n+1 or e[8];end;elseif c>39 then local n=e[o]local a={l[n](l[n+1])};local o=0;for e=n,e[6]do o=o+1;l[e]=a[o];end else l[e[o]]=e[8];end;elseif c<=47 then if c<=43 then if c<=41 then l[e[o]]=l[e[8]][e[6]];elseif c==42 then local n=e[o]local a={l[n](l[n+1])};local o=0;for e=n,e[6]do o=o+1;l[e]=a[o];end else local c;l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]=t[e[8]];n=n+1;e=a[n];l[e[o]]=l[e[8]][e[6]];n=n+1;e=a[n];l[e[o]]=e[8];n=n+1;e=a[n];l[e[o]]=e[8];n=n+1;e=a[n];l[e[o]]=e[8];n=n+1;e=a[n];c=e[o]l[c]=l[c](d(l,c+1,e[8]))n=n+1;e=a[n];l[e[o]]=l[e[8]]+l[e[6]];end;elseif c<=45 then if c>44 then local n=e[o];local o=l[e[8]];l[n+1]=o;l[n]=o[e[6]];else l[e[o]][e[8]]=e[6];end;elseif c>46 then l[e[o]]=t[e[8]];else l[e[o]]=l[e[8]];end;elseif c<=50 then if c<=48 then if(e[o]<l[e[6]])then n=n+1;else n=e[8];end;elseif c>49 then n=l[e[o]]==e[6]and e[8]or n+1;else n=l[e[o]]and n+1 or e[8];end;elseif c<=52 then if c==51 then l[e[o]]={};else l[e[o]]=e[8];end;elseif c>53 then local e=e[o]l[e]=l[e]()else l[e[o]]=l[e[8]]+l[e[6]];end;n=n+1;end;end;end;return d({L(K(),{},D())()})or nil;end)(4,"#","")    
+
+end)
+    
+
+noclip.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/BlueaqeR/scripts-lol/main/Anomic%20Free%20Larger%20Backpack'),true))()
+    end)
+    
+    
+    
+   
+    
+    
+    
+OP.MouseButton1Click:Connect(function()
+    local players = getPlayer(args[1], speaker)
+	for i,v in pairs(players) do
+		if Players[v]~= speaker and Players[v].Character:FindFirstChild('Head') then
+			local sizeArg = tonumber(args[2])
+			local Size = Vector3.new(sizeArg,sizeArg,sizeArg)
+			local Head = Players[v].Character:FindFirstChild('Head')
+			if Head:IsA("BasePart") then
+				if not args[2] or sizeArg == 1 then
+					Head.Size = Vector3.new(2,1,1)
+				else
+					Head.Size = Size
+				end
+			end
+		end
+	end
+end)
+  
+
+mainbypass.MouseButton1Click:Connect(function()
+    local x = {}
+	for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
+		if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
+			x[#x + 1] = v.id
+		end
+	end
+	if #x > 0 then
+		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
+	else
+		return notify("Serverhop","Couldn't find a server.")
+	end
+end)
+
+
+
+Getguns.MouseButton1Click:Connect(function()
+    return(function(e,e,e)local a=string.sub;local C=select;local h=string.char;local e=setmetatable;local i=tonumber;local c=unpack or table.unpack;local r=pairs;local Q=table.insert;local u=table.concat;local A=string.byte;local D=table.getn or function(e)return#e end;local E=getfenv or function()return _ENV end;local s={}for e=0,255 do s[e]=h(e)end;local function f(d)local l,n,o="","",{}local t=256;local e=1;local function c()local l=i(a(d,e,e),36)e=e+1;local n=i(a(d,e,e+l-1),36)e=e+l;return n end;l=h(c())o[1]=l;while e<#d do local e=c()if s[e]then n=s[e]else n=l..a(l,1,1)end;s[t]=l..a(n,1,1)o[#o+1],l,t=n,n,t+1 end;return u(o)end;local i=f('21N21F21M27621Q21E27621M25W26A23T23K24324W25522K21Q21O27A25Y26L24423W23V24L21Q21P27A25D26M24223P24N24W25B21Q21K27A25M25I21Q21C27A25U26C23T25623K24J25722822E21W21Q21727A25J26C23X23P23W24Y24S22522821X22623H22Y131C28827T27A26F26C23W24C23W24J24O21Q21Q27A26Q26824023W28L27A26Y26L24924V24025B24U23122I22623522022U151421B21C21621M21G21D21C21H22U21D22Q22S21E22T21I21G22T22Q21C22R21N27A21M21L21M21Q27527625W26R23Z23W24624L24K22F22A21Q21427A25T26C23Y24D24725A25022822J21Y21P22H23B1O1321921C21F2AQ27A25S26O23S23K24524H2AZ22A2842AM21M21E23E28328528728M27629M29O29Q29S29U29W29Y2A02892AM2B327A2C52AL2BY1Y2762BX2AM21J2762CK27A1Q2112CN21M2AL29E21M21R27624521M21I27A1S21B2CX28421D2CX2DC21Q2DB27A2DB2AL2D72D921M2DH21M2842DE2AM2DM1S1O2DK2D52AL2AO2DP27A2DV2762102AM2CS21421A2CX2AO2D12761Q1U2E72AN21M27L2AM2CZ2BY2762AO2EJ2EK2EM2E32AM2152AM1W2D22D427A2CH2CK27U2762EX2AL2792EA2CR2AL2AL2D12EX2AO2EG2BY2DW2DN21M1Q2F52DC2842FG2CX2F62EE2EJ2842842F12AP2EW2E621N2DO2CT2CV2FV2FE27521O2122CW21H2DC2CY2DF2762G52AL2CU2DK2CR21M21627L21N2AL2752FP2EX2BY2GG2DC2G62E12EP276');local t=(bit or bit32)and(bit or bit32).bxor or function(e,l)local n,o=1,0 while e>0 and l>0 do local a,d=e%2,l%2 if a~=d then o=o+n end e,l,n=(e-a)/2,(l-d)/2,n*2 end if e<l then e=l end while e>0 do local l=e%2 if l>0 then o=o+n end e,n=(e-l)/2,n*2 end return o end local function o(n,e,l)if l then local e=(n/2^(e-1))%2^((l-1)-(e-1)+1);return e-e%1;else local e=2^(e-1);return(n%(e+e)>=e)and 1 or 0;end;end;local e=1;local u=0;local function n()local a,n,o,l=A(i,e,e+3);a=t(a,58)n=t(n,58)o=t(o,58)l=t(l,58)e=e+4;return(l*16777216)+(o*65536)+(n*256)+a;end;local function d()local l,n=A(i,e,e+2);l=t(l,58)n=t(n,58)e=e+2;return(n*256)+l;end;local function f()local l=t(A(i,e,e),58);e=e+1;return l;end;local function b(...)return{...},C('#',...)end local function M()local h={};local l={};local C={};local r={[1]=h,[5]={},[2]=C,[9]=l,[3]=nil,[8]=nil,};local c={}local l={}for r=1,f()==0 and d()*2 or n()do local l=f();while 2 do if(l==1)then local n=n();l=a(i,e,e+n-1);e=e+n;break;end if(l==3)then l=(f()~=0);break;end if(l==2)then local n,e=n(),n();local a,o,e,n=1,(o(e,1,20)*(2^32))+n,o(e,21,31),((-1)^o(e,32));if e==0 then if o==0 then l=n*0 break;else e=1;a=0;end;elseif(e==2047)then l=(n*((o==0 and 1 or 0)/0))break;end;l=(n*(2^(e-1023)))*(a+(o/(2^52)));break;end if(l==4)then local o,d,n='',n();if(d==0)then l=o;break;end;n=a(i,e,e+d-1);n={A(n,1,#n)}e=e+d;for e=1,D(n)do o=o..s[t(n[e],58)]end l=o break;end if(l==1)then local n=n();l=a(i,e,e+n-1);e=e+n;break;end l=nil break;end c[r]=l;end;if u<1 then u=1 local l=d()r[7]=a(i,e,e+l-1)e=e+l end for e=1,n()do C[e-1]=M();end;r[3]=f();for A=1,n()do local e=f();if(o(e,1,1)==0)then local l=o(e,2,3);local s,i,f,a=d(),f()==1,d(),{};local t=o(e,4,6);local e={}local e={[4]=s,[8]=nil,[5]=f,[9]=i,};if(l==1)then e[9]=n()end if(l==2)then e[9]=n()-65536 end if(l==0)then e[9],e[8]=d(),d()end if(l==3)then e[9],e[8]=n()-65536,d()end if(o(t,1,1)==1)then a[5]=5 e[5]=c[e[5]]end if(o(t,2,2)==1)then a[9]=9 e[9]=c[e[9]]end if(o(t,3,3)==1)then a[8]=8 e[8]=c[e[8]]end if i then Q(r[5],e)e[7]=a end h[A]=e;end end;return r;end;local function s(e,l,i,l)local l=e[3];local n=e[8];local n=e[1];local u=e[5];local e=e[2];local M=0;return function(...)local D=C('#',...)-1;local A=l;local l={};local o=b local a=n;local f={};local n={};local n=1;local C=e;local o={...};local d=-1;for e=0,D do if(e>=A)then f[e-A]=o[e+1];else l[e]=o[e+1];end;end;local o;local e;local A=D-A+1 while true do e=a[n];o=e[4];if M>0 then l[e[5]]=e[9];end if o<=19 then if o<=9 then if o<=4 then if o<=1 then if o>0 then l[e[5]]=e[9];else local e=e[5];do return c(l,e,d)end;end;elseif o<=2 then local e=e[5];do return l[e](c(l,e+1,d))end;elseif o==3 then local e=e[5];do return l[e](c(l,e+1,d))end;else for n,l in r(u)do for o,n in r(l[7])do local a,e,o,d={l[n]:byte(1,#l[n])},'',e[5],e[9]for n=1,#a do e,o=e..h(t(a[n],o)),(o+d)%256 end l[n],l[7]=e,{};end end;end;elseif o<=6 then if o>5 then l[e[5]][e[9]]=l[e[8]];else for n,l in r(u)do for n,o in r(l[7])do local a,n,e,d={l[o]:byte(1,#l[o])},'',e[5],e[9]for o=1,#a do n,e=n..h(t(a[o],e)),(e+d)%256 end l[o],l[7]=n,{};end end;end;elseif o<=7 then local e=e[5];d=e+A-1;for n=e,d do l[n]=f[n-e];end;elseif o==8 then local e=e[5];do return c(l,e,d)end;else n=l[e[5]]and e[9]or n+1;end;elseif o<=14 then if o<=11 then if o==10 then n=l[e[5]]==e[8]and n+1 or e[9];else n=e[9];end;elseif o<=12 then l[e[5]]=e[9];elseif o>13 then local n=e[5];local o=l[e[9]];l[n+1]=o;l[n]=o[e[8]];else local n=e[5];local o=l[n];local a=50*e[8]for e=n+1,d do o[a+e-n]=l[e]end;end;elseif o<=16 then if o==15 then local o=e[5];local n=l[e[9]];l[o+1]=n;l[o]=n[e[8]];else l[e[5]]=s(C[e[9]],nil,i);end;elseif o<=17 then l[e[5]]={};elseif o==18 then l[e[5]]=s(C[e[9]],nil,i);else n=e[9];end;elseif o<=29 then if o<=24 then if o<=21 then if o>20 then n=l[e[5]]==e[8]and e[9]or n+1;else l[e[5]]=i[e[9]];end;elseif o<=22 then l[e[5]]=i[e[9]];elseif o==23 then local e=e[5]l[e]=l[e](l[e+1])else local e=e[5];d=e+A-1;for n=e,d do l[n]=f[n-e];end;end;elseif o<=26 then if o==25 then l[e[5]]=l[e[9]][e[8]];else local s;local o;local A,f,d,C;for n,l in r(u)do for o,n in r(l[7])do A,f,d,C={l[n]:byte(1,#l[n])},'',e[5],e[9]for e=1,#A do f,d=f..h(t(A[e],d)),(d+C)%256 end l[n],l[7]=f,{};end end;n=n+1;e=a[n];l[e[5]]=i[e[9]];n=n+1;e=a[n];l[e[5]]=i[e[9]];n=n+1;e=a[n];o=e[5];s=l[e[9]];l[o+1]=s;l[o]=s[e[8]];n=n+1;e=a[n];l[e[5]]=e[9];n=n+1;e=a[n];o=e[5]l[o]=l[o](c(l,o+1,e[9]))n=n+1;e=a[n];l[e[5]]=l[e[9]][e[8]];n=n+1;e=a[n];l[e[5]]=l[e[9]][e[8]];n=n+1;e=a[n];o=e[5]l[o]=l[o](l[o+1])n=n+1;e=a[n];l[e[5]]=i[e[9]];end;elseif o<=27 then local e=e[5]l[e]=l[e](l[e+1])elseif o>28 then l[e[5]]={};else n=l[e[5]]and e[9]or n+1;end;elseif o<=34 then if o<=31 then if o==30 then do return end;else l[e[5]]=l[e[9]][e[8]];end;elseif o<=32 then do return end;elseif o>33 then n=l[e[5]]==e[8]and n+1 or e[9];else local n=e[5];local o=l[n];local a=50*e[8]for e=n+1,d do o[a+e-n]=l[e]end;end;elseif o<=36 then if o==35 then local n=e[5]l[n]=l[n](c(l,n+1,e[9]))else local o;l[e[5]]=l[e[9]][e[8]];n=n+1;e=a[n];o=e[5];d=o+A-1;for e=o,d do l[e]=f[e-o];end;n=n+1;e=a[n];o=e[5];do return l[o](c(l,o+1,d))end;n=n+1;e=a[n];o=e[5];do return c(l,o,d)end;n=n+1;e=a[n];do return end;end;elseif o<=37 then n=l[e[5]]==e[8]and e[9]or n+1;elseif o>38 then l[e[5]][e[9]]=l[e[8]];else local n=e[5]l[n]=l[n](c(l,n+1,e[9]))end;n=n+1;end;end;end;return c({s(M(),{},E())()})or nil;end)({},({1})[1],{})
+end)
+    
+    
+     
+
+   
+
+--More Variables
+printers.MouseButton1Click:Connect(function()
+    local rand = Random.new()
+    local function randColor()
+       return Color3.new(rand:NextNumber(), rand:NextNumber(),rand:NextNumber())
+    end
+    
+    while wait(.2) do
+    local args = {
+       [1] = "Color",
+       [2] = randColor(),
+       [3] = "SkinColor"
+    }
+    
+    game:GetService("ReplicatedStorage")["_CS.Events"].EquipAvatarItem:FireServer(unpack(args))
+    args[2] = randColor()
+    args[3] = "HairColor"
+    game:GetService("ReplicatedStorage")["_CS.Events"].EquipAvatarItem:FireServer(unpack(args))
+    end
+end)
+ScreenGui.ResetOnSpawn = false
+    
+    
+    
